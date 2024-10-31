@@ -25,24 +25,24 @@
 TFT_eSPI tft = TFT_eSPI();  // Create TFT object
 XPT2046_Touchscreen ts(T_CS,T_IRQ);
 
-int grid[GRID_SIZE][GRID_SIZE]={0};/*{
-  {2,
-  4,
-  8,
-  16},
-    {32,
-    64,
-    128,
-    256},
-      {512,
-      1024,
-      2048,
-      4096},
-        {8192,
+int grid[GRID_SIZE][GRID_SIZE]={
+  {0,
+  0,
+  0,
+  0},
+    {0,
+    0,
+    0,
+    0},
+      {0,
+      0,
+      0,
+      0},
+        {0,
         0,
         0,
         0}
-};*/
+};
 int colours[12]={TFT_DARKGREY,TFT_YELLOW,TFT_GREEN,TFT_OLIVE,TFT_CYAN,TFT_DARKCYAN,TFT_BLUE,TFT_NAVY,TFT_MAGENTA,TFT_PURPLE,TFT_MAROON,TFT_RED};
 int score = 0;
 int16_t calData[4]={5000/*X_MIN*/,5000/*Y_MIN*/,0/*X_MAX*/,0/*Y_MAX*/};
